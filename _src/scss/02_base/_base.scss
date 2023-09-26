@@ -1,0 +1,44 @@
+@use "./01_setting/_mixin.scss" as m;
+@use "./01_setting/_var.scss" as v;
+/*  02_base
+================================================ */
+html {
+	overflow: auto;
+}
+body {
+	min-width: 1240px;
+	padding-top: 90px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #000;
+	font-size: 2.4rem;
+	line-height: calc(33/24);
+	letter-spacing: 0;
+	overflow: hidden;
+}
+
+a {
+	color: inherit;
+	text-decoration: underline;
+	@include m.mq {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.m-plus-1p{
+	font-family: 'M PLUS 1p', sans-serif;
+}
+
+.l-wrapper {
+	position: relative;
+}
+
+.l-container {
+	padding: 20px 0 80px;
+}
