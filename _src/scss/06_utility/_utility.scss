@@ -6,11 +6,9 @@
 .u-alpha {
 	display: block;
 	text-decoration: none;
-	@include m.mq {
-		@include m.trans;
-		&:hover {
-			opacity: .7;
-		}
+	@include m.trans;
+	&:hover {
+		opacity: .7;
 	}
 }
 

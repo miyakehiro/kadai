@@ -85,7 +85,7 @@
 								padding-top: 11px;
 								padding-bottom: 25px;
 								&::before{
-									margin-top: -18px;
+									margin-top: -15px;
 								}
 							}
 						}
@@ -106,9 +106,9 @@
 							top: 50%;
 							right: 30px;
 							background: url('../img/common/ico_arrow02_off.webp') no-repeat center /100%;
-							width: 20px;
-							height: 18px;
-							margin-top: -1px;
+							width: 9px;
+							height: 14px;
+							margin-top: 2px;
 							@include m.trans;
 						}
 						&:hover{
@@ -143,7 +143,7 @@
 			padding: 0 10px;
 			position: relative;
 			font-size: 2.6rem;
-			font-weight: bold;
+			font-weight: 700;
 			line-height: 1;
 			color: #fff;
 			text-decoration: none;

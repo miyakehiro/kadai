@@ -53,6 +53,10 @@
 	&__logo{
 		width: 275px;
 	}
+	&__logo-link{
+		display: block;
+		text-decoration: none;
+	}
 	&__sns-list{
 		display: flex;
 		justify-content: space-between;
@@ -72,11 +76,32 @@
 ================================================ */
 .ft-cr{
 	margin-top: 60px;
+	text-align: center;
 	&__link{
-		display: block;
-		font-size: 1.1rem;
+		display: inline-block;
+		position: relative;
+		font-size: 1.3rem;
 		text-align: center;
 		color: #e60029;
 		text-decoration: none;
+		@include m.trans;
+		&::before{
+			display: block;
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 1px;
+			background: #e60029;
+			opacity: 0;
+			@include m.trans;
+
+		}
+		&:hover{
+			&::before{
+				opacity: 1;
+			}
+		}
 	}
 }

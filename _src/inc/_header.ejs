@@ -15,9 +15,6 @@
     <meta property="og:description" content="<%- header.description %>" />
     <meta property="og:site_name" content="<%- header.title %>" />
     <meta property="og:image" content="<%- header.imgSrc %>/common/ogp.jpg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Noto+Sans+JP:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="<%- header.imgSrc %>/favicon.ico" >
     <link rel="apple-touch-icon" href="<%- header.imgSrc %>/apple-touch-icon.png">
     <link rel="stylesheet" type="text/css" href="<%- header.cssSrc %>/slick.css">
@@ -32,7 +29,7 @@
             <div class="hd-info">
                 <div class="hd-info-inner">
                     <h1 class="hd-info__logo js-logo">
-                        <a href="/" class="hd-info_logo-link u-alpha">
+                        <a href="/" class="hd-info__logo-link u-alpha">
                          <picture>
                             <source srcset="<%- header.imgSrc %>/common/img_logo01.webp" type="image/webp">
                             <img src="<%- header.imgSrc %>/common/img_logo01.png" alt="<%- header.title %>">
@@ -48,10 +45,10 @@
                                 <a class="nav-list__link" itemprop="URL" href="#event">EVENT</a>
                                 <ul class="nav-sub-list">
                                     <li class="nav-sub-list__item">
-                                        <a class="nav-sub-list__link" href="">オンラインイベント概要</a>
+                                        <a class="nav-sub-list__link myriad-pro" href="">オンラインイベント概要</a>
                                     </li>
                                     <li class="nav-sub-list__item">
-                                        <a class="nav-sub-list__link" href="">オンラインイベント概要</a>
+                                        <a class="nav-sub-list__link myriad-pro" href="">オンラインイベント概要</a>
                                     </li>
                                 </ul>
                             </li>
@@ -70,10 +67,6 @@
                 <img src="<%- header.imgSrc %>/<%- header.slug %>/img_main01.png" alt="<%- header.title %>">
             </picture>
 			<div class="l-main-img-inner">
-				<picture class="l-main-img-logo">
-                    <source srcset="<%- header.imgSrc %>/<%- header.slug %>/img_logo01.webp" type="image/webp">
-                    <img src="<%- header.imgSrc %>/<%- header.slug %>/img_logo01.png" alt="<%- header.title %>">
-                </picture>
                 <div class="video"></div>
 			</div>
 		</div>
