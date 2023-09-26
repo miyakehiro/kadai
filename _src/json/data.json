@@ -1,0 +1,46 @@
+{
+    "data": {
+        "header": {
+            "common": {
+                "title":"課題",
+                "description": "課題",
+                "keywords": "課題",
+                "slug": "home",
+                "baseUrl": "",
+                "cssSrc": "css",
+                "imgSrc": "img",
+                "jsSrc": "js"
+            }
+        },
+        "footer": {
+            "common": {
+                "title":"課題",
+                "imgSrc": "img",
+                "jsSrc": "js"
+            }
+        },
+        "news": {
+            "lists" : [
+                {
+                "link": "/",
+                "img": "/img/img-news01.png",
+                "date": "2022.10.27",
+                "text": "お知らせのタイトルが入ります。お知らせのタイトルが入ります。お知らせのタイトルが入ります。"
+                },
+                {
+                "link": "/",
+                "img": "/img/img-news02.png",
+                "date": "2022.10.27",
+                "text": "コンお知らせのタイトルが入ります。お知らせのタイトルが入ります。お知らせのタイトルが入ります。テンツ02"
+                },
+                {
+                "link": "/",
+                "img": "/img/img-news02.png",
+                "date": "2022.10.27",
+                "text": "コンお知らせのタイトルが入ります。お知らせのタイトルが入ります。お知らせのタイトルが入ります。テンツ02"
+                }
+              ]
+        }
+    }
+}
+
