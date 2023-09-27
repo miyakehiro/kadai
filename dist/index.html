@@ -15,9 +15,6 @@
     <meta property="og:description" content="課題" />
     <meta property="og:site_name" content="課題" />
     <meta property="og:image" content="img/common/ogp.jpg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Noto+Sans+JP:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico" >
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
@@ -70,11 +67,14 @@
                 <img src="img/home/img_main01.png" alt="課題">
             </picture>
 			<div class="l-main-img-inner">
-				<picture class="l-main-img-logo">
-                    <source srcset="img/home/img_logo01.webp" type="image/webp">
-                    <img src="img/home/img_logo01.png" alt="課題">
-                </picture>
-                <div class="video"></div>
+                <div class="l-main-img__video">
+                    <div class="l-main-img__video-box js-video" data-video-id="83VWrmFNiMk">
+                        <picture>
+                            <source srcset="img/home/img_video01.webp" type="image/webp">
+                            <img src="img/home/img_video01.png" alt="youtube">
+                        </picture>
+                    </div>
+                </div>
 			</div>
 		</div>
 
@@ -131,6 +131,17 @@
     <script src="js/animation.js"></script>
     <script src="js/common.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/videoLightning.min.js"></script>
+    <script>
+        $(function() {
+            $(".js-video").jqueryVideoLightning({
+                id: "83VWrmFNiMk",
+                autoplay: true,
+                bdColor: "#000",
+            });
+        });
+    </script>
+
     <script type="text/javascript">
         $(".slide-items").slick({
             arrows: true,
