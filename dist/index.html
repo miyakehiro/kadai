@@ -3,28 +3,34 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <title>課題</title>
+    <title>RIOT GAMES ONE</title>
     <meta name="description" content="課題" />
-    <meta name="keywords" content="課題"> 
+    <meta name="keywords" content="RIOT GAMES ONE"> 
     <meta property="og:locale" content="ja_JP" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="課題" />
+    <meta property="og:title" content="RIOT GAMES ONE" />
     <meta property="og:description" content="課題" />
-    <meta property="og:site_name" content="課題" />
+    <meta property="og:site_name" content="RIOT GAMES ONE" />
     <meta property="og:image" content="img/common/ogp.jpg">
-    <link rel="shortcut icon" href="img/favicon.ico" >
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="img/common/favicon.ico" >
+    <link rel="apple-touch-icon" href="img/common/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=M+PLUS+1p:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=M+PLUS+1p:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body id="home" class="js-anime">
+    <div class="loading">
+        <picture class="loading__logo">
+            <source srcset="img/home/ico_bg01.webp" type="image/webp">
+            <img src="img/home/ico_bg01.png" alt="">
+        </picture>
+    </div>
     <div class="js-media-query u-media-query"></div>
     <div class="js-nav-overlay nav-overlay"></div>
     <div class="l-wrapper">
@@ -35,7 +41,7 @@
                         <a href="/" class="hd-info__logo-link u-alpha">
                          <picture>
                             <source srcset="img/common/img_logo01.webp" type="image/webp">
-                            <img src="img/common/img_logo01.png" alt="課題">
+                            <img src="img/common/img_logo01.png" alt="RIOT GAMES ONE">
                         </picture>
                         </a>
                     </h1>
@@ -48,16 +54,15 @@
                                 <a class="nav-list__link" itemprop="URL" href="#event">EVENT</a>
                                 <ul class="nav-sub-list">
                                     <li class="nav-sub-list__item">
-                                        <a class="nav-sub-list__link myriad-pro" href="">オンラインイベント概要</a>
+                                        <a class="nav-sub-list__link myriad-pro" href="#online">オンラインイベント概要</a>
                                     </li>
                                     <li class="nav-sub-list__item">
-                                        <a class="nav-sub-list__link myriad-pro" href="">オンラインイベント概要</a>
+                                        <a class="nav-sub-list__link myriad-pro" href="#offline">オフラインイベント概要</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-list__item" itemprop="name">
                                 <a class="nav-list__link" itemprop="URL" href="#tickets">TICKETS</a>
-                            </li>
                             </li>
                         </ul>
                     </nav>
@@ -67,7 +72,7 @@
         <div class="l-main-img">
             <picture>
                 <source srcset="img/home/img_main01.webp" type="image/webp">
-                <img src="img/home/img_main01.png" alt="課題">
+                <img src="img/home/img_main01.png" alt="RIOT GAMES ONE">
             </picture>
 			<div class="l-main-img-inner">
                 <div class="l-main-img__video">
@@ -83,7 +88,7 @@
 
 <div class="l-contents">
     <main role="main">
-        <div class="lead">
+        <div class="lead js-anime-elem">
             <div class="u-inner">
                 <div class="lead-box online">
                     <picture>
@@ -100,7 +105,15 @@
             </div>
         </div>
 
-        <section id="news" class="home-news">
+        <section id="news" class="home-news js-anime-elem">
+            <div class="bg-gear">
+                <div class="bg-gear__rotate">
+                    <picture>
+                          <source srcset="img/home/ico_bg01.webp" type="image/webp">
+                          <img src="img/home/ico_bg01.png" alt="お知らせ">
+                    </picture>
+                </div>
+            </div>
             <div class="home-news__inner u-inner">
                 <h2 class="tit">
                     <picture class="ja">
@@ -134,11 +147,34 @@
             </div>
         </section>
 
-        <div class="mid">
-            <picture class="en">
-                <source srcset="img/home/bg_one01.webp" type="image/webp">
-                <img src="img/home/bg_one01.png" alt="GAMES, FANS, RIOT, as">
-            </picture>
+        <div class="mid js-anime-elem">
+            <ul class="list js-bg-slider">
+                <li  class="list-item">
+                    <picture>
+                        <source srcset="img/home/bg_one01.webp" type="image/webp">
+                        <img src="img/home/bg_one01.png" alt="GAMES, FANS, RIOT, as">
+                    </picture>
+                </li>
+                <li  class="list-item">
+                    <picture>
+                        <source srcset="img/home/bg_one02.webp" type="image/webp">
+                        <img src="img/home/bg_one02.png" alt="GAMES, FANS, RIOT, as">
+                    </picture>
+                </li>
+                <li  class="list-item">
+                    <picture>
+                        <source srcset="img/home/bg_one03.webp" type="image/webp">
+                        <img src="img/home/bg_one03.png" alt="GAMES, FANS, RIOT, as">
+                    </picture>
+                </li>
+                <li  class="list-item">
+                    <picture>
+                        <source srcset="img/home/bg_one04.webp" type="image/webp">
+                        <img src="img/home/bg_one04.png" alt="GAMES, FANS, RIOT, as">
+                    </picture>
+                </li>
+            </ul>
+            
             <div class="mid-box">
                 <h2 class="tit">
                     <picture class="en">
@@ -150,11 +186,11 @@
                           <img src="img/home/tit_one01.png" alt="ONE">
                     </picture>
                 </h2>
-                <p class="txt myriad-pro">Riot Games ONEは、<br>今年1年を通じてRiot Gamesを盛り上げていただいた方々が<br>一堂に会して今年の集大成を披露する<br>2ヶ月間のオンライン・オフライン統合イベントです。</p>
+                <p class="txt note-sans">Riot Games ONEは、<br>今年1年を通じてRiot Gamesを盛り上げていただいた方々が<br>一堂に会して今年の集大成を披露する<br>2ヶ月間のオンライン・オフライン統合イベントです。</p>
             </div>
         </div>
 
-        <section id="event" class="home-event">
+        <section id="event" class="home-event js-anime-elem">
             <div class="home-event__inner u-inner">
                 <h2 class="tit">
                     <picture class="ja">
@@ -168,7 +204,7 @@
                 </h2>
                 <div class="home-event__box">
                     <ul class="list">
-                        <li class="list-item">
+                        <li id="online" class="list-item">
                             <a href="" class="list-item__link">
                                 <picture>
                                       <source srcset="img/home/bnr_event01_off.webp" type="image/webp">
@@ -176,7 +212,7 @@
                                 </picture>
                             </a>
                         </li>
-                        <li class="list-item">
+                        <li id="offline" class="list-item">
                             <a href="" class="list-item__link">
                                 <picture>
                                       <source srcset="img/home/bnr_event02_off.webp" type="image/webp">
@@ -189,7 +225,7 @@
             </div>
         </section>
 
-        <section id="tickets" class="home-ticket">
+        <section id="tickets" class="home-ticket js-anime-elem">
             <div class="home-ticket__inner u-inner">
                 <h2 class="tit">
                     <picture class="ja">
@@ -212,7 +248,7 @@
             </div>
         </section>
 
-        <div class="production">
+        <div class="production js-anime-elem">
             <div class="u-inner">
                 <h2 class="tit">
                     <picture>
@@ -282,7 +318,7 @@
 	        <p class="ft-cr"><a href="/" class="ft-cr__link master-sans"><small class="ft-cr__txt">&copy; </small>2022 Riot Games, Inc All Rights Reserved.</a></p>
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
     <script src="js/animation.js"></script>
     <script src="js/common.min.js"></script>
     <script src="js/news.min.js"></script>
@@ -297,5 +333,27 @@
         });
     </script>
     <script src="js/slick.min.js"></script>
+    <script>
+        $(function () {
+        var $slider = $('.js-bg-slider');
+        
+            $slider.slick({
+                arrows: false,
+                dots: false,
+                fade: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                speed: 600,
+                slidesToShow: 1,
+            });
+            $slider.on({
+                mouseenter: function () { isPause = true; },
+                mouseleave: function () { isPause = false; }
+            });
+        });
+    </script>
 </body>
 </html>
+
+
+

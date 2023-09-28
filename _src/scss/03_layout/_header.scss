@@ -41,11 +41,12 @@
 		height: 100%;
 		align-items: center;
 		justify-content: center;
-		gap: 0 60px;
+		gap: 0 64px;
 		&__item {
 			height: 100%;
 			text-align: center;
 			&:nth-child(2){
+				position: relative;
 				&:hover{
 					.nav-sub-list{
 						display: block;
@@ -64,7 +65,7 @@
 						background: url('../img/common/ico_arrow01_off.webp') no-repeat center /100%;
 						width: 20px;
 						height: 18px;
-						margin-top: -12px;
+						margin-top: -9px;
 						@include m.trans;
 					}
 					&:hover{
@@ -79,14 +80,15 @@
 					position: absolute;
 					opacity: 0;
 					top: 89px;
+					left: -14px;
 					width: 300px;
 					&__item{
 						+.nav-sub-list__item{
 							.nav-sub-list__link{
-								padding-top: 11px;
+								padding-top: 6px;
 								padding-bottom: 25px;
 								&::before{
-									margin-top: -15px;
+									margin-top: -20px;
 								}
 							}
 						}
@@ -95,7 +97,7 @@
 						display: block;
 						position: relative;
 						padding: 30px 30px 11px 10px;
-						font-size: 1.8rem;
+						font-size: 2rem;
 						text-align: left;
 						font-weight: 700;
 						color: #fff;
@@ -105,7 +107,7 @@
 							position: absolute;
 							content: "";
 							top: 50%;
-							right: 30px;
+							right: 32px;
 							background: url('../img/common/ico_arrow02_off.webp') no-repeat center /100%;
 							width: 9px;
 							height: 14px;
@@ -124,7 +126,7 @@
 			&:last-child{
 				.nav-list__link{
 					background: #fa227a;
-					padding: 0 60px;
+					padding: 0 53px;
 					color: #fff;
 					@include m.trans;
 					&::after{
@@ -141,10 +143,10 @@
 			display: flex;
 			align-items: center;
 			height: 100%;
-			padding: 0 10px;
 			position: relative;
 			font-size: 2.6rem;
 			font-weight: 700;
+			letter-spacing: .07em;
 			line-height: 1;
 			color: #fff;
 			text-decoration: none;

@@ -1,9 +1,76 @@
 @use "./01_setting/_mixin.scss" as m;
 @use "./01_setting/_var.scss" as v;
+
+
 /*
 animation
 -------------------------------------- */
-//fadein 下からフェードインします
+//ローディングアニメーション
+.loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10000;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: fadeOut 1.5s 2.5s forwards;
+  }
+  
+  @keyframes fadeOut {
+	0% {
+	  opacity: 1;
+	}
+  
+	100% {
+	  opacity: 0;
+	  visibility: hidden;
+	}
+  }
+  
+  .loading__logo {
+	animation: logo_fade 2s 0.5s forwards;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+	width: 30%;
+  }
+  
+  @keyframes logo_fade {
+	0% {
+	  transform:rotate(0deg);
+	}
+	12.5% {
+	  transform:rotate(90deg);
+	}
+	25% {
+	  transform:rotate(180deg);
+	}
+	37.5% {
+	  transform:rotate(270deg);
+	}
+	50% {
+	  transform:rotate(360deg);
+	}
+	62.5% {
+	  transform:rotate(450deg);
+	}
+	75% {
+	  transform:rotate(540deg);
+	}
+	87.5% {
+	  transform:rotate(630deg);
+	}
+	100% {
+	  transform:rotate(720deg);
+	}
+  }
+
+//fadein 下からフェードイン
 .js-anime-elem {
 	opacity: 0;
 	transform: translateY(40px);
@@ -18,38 +85,47 @@ animation
 	}
 }
 
-/* //ヘッダー・メインビジュアル・NEWSのアニメーション
-================================================ */
+//newsの背景アニメーション
+@keyframes gear {
+	0% {
+	  transform:rotate(0deg);
+	}
+	12.5% {
+	  transform:rotate(90deg);
+	}
+	25% {
+	  transform:rotate(180deg);
+	}
+	37.5% {
+	  transform:rotate(270deg);
+	}
+	50% {
+	  transform:rotate(360deg);
+	}
+	62.5% {
+	  transform:rotate(450deg);
+	}
+	75% {
+	  transform:rotate(540deg);
+	}
+	87.5% {
+	  transform:rotate(630deg);
+	}
+	100% {
+	  transform:rotate(720deg);
+	}
+}
+.bg-gear{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__rotate{
+		animation-duration: 20s;
+		animation-timing-function: linear;
+		animation-direction: normal;
+		animation-iteration-count: infinite;
+		box-sizing: border-box;
+		animation-name: gear;
 
-body.is_animated{
-	@include m.mq{
-		.l-header{
-			opacity: 1;
-		}
-		.l-main-img{
-			opacity: 1;
-		}
-		.l-sub-img{
-			opacity: 1;
-		}
-		.animated-main-img__tit{
-			span{
-				transform: translateX(0);
-				opacity: 1;
-			}
-		}
-		.animated-main-img__txt{
-			span{
-				transform: translateX(0);
-				opacity: 1;
-			}
-		}
-		.animated-main-img__item{
-			transform: translateX(0);
-			opacity: 1;
-		}
-		.animated-home-news{
-			opacity: 1;
-		}
 	}
 }

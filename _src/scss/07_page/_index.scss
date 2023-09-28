@@ -10,8 +10,6 @@
 			align-items: center;
 			box-sizing: border-box;
 			width: 1080px;
-			margin: 0 auto;
-			gap: 0 65px;
 			+.lead-box{
 				margin-top: 30px;
 			}
@@ -21,19 +19,16 @@
 	/* .home-news
 	================================================ */
 	.home-news{
-		margin-top: 100px;
+		margin-top: 89px;
 		position: relative;
-		&::before{
-			display: block;
-			content: "";
+		.bg-gear{
 			position: absolute;
 			top: 50%;
-			right: -48vw;
-			background: url('../img/home/ico_bg01.webp') no-repeat center /100%;
+			right: -25vw;
 			width: 1210px;
 			height: 1210px;
-			margin-top: -605px;
-			@include m.trans;
+			margin-top: -538px;
+
 		}
 		.tit{
 			.ja{
@@ -47,7 +42,7 @@
 			}
 		}
 		&__box{
-			margin-top: 55px;
+			margin-top: 39px;
 			.slider-container {
 				margin: 0 auto;
 				width: 100%;
@@ -60,22 +55,58 @@
 				}
 				.slider-item {
 				  box-sizing: border-box;
+				  padding-top: 16px;
 				  padding-right: 32px;
 				  display: inline-block;
 				  vertical-align: top;
 				  white-space: normal;
 				  width: 100%;
+				  .list-item__link{
+					display: block;
+					position: relative;
+					&.new{
+						&::before{
+							display: block;
+							content: "";
+							position: absolute;
+							top: -16px;
+							left: 0;
+							width: 106px;
+							height: 44px;
+							background: url('../img/common/ico_new01.webp') no-repeat center /100%;
+						}
+					}
+					&::after{
+						display: block;
+						content: "";
+						position: absolute;
+						top: -16px;
+						left: 0;
+						width: 100%;
+						height: calc(100% + 16px);
+						background: #050505;
+						opacity: 0;
+						@include m.trans;
+					}
+					&:hover{
+						&::after{
+							opacity: 0.5;
+						}
+					}
+				  }
 				  .date{
-					margin-top: 25px;
-					margin-left: 15px;
-					font-size: 1.6rem;
+					margin-top: 32px;
+					margin-left: 18px;
+					font-size: 2rem;
 					font-weight: 700;
 					color: #00ff0b;
 				  }
 				  .txt{
-					margin-top: 10px;
-					margin-left: 15px;
-					line-height: 1.75;
+					margin-top: 7px;
+					margin-left: 19px;
+					font-size: 2.2rem;
+					line-height: 1.5;
+					letter-spacing: .09em;
 					font-weight: 500;
 					color: #fff;
 	
@@ -189,25 +220,29 @@
 			padding: 0 66px;
 		}
 		.tit{
-			padding-top: 25vh;
+			padding-top: 8.9vw;
 			.en{
 				display: block;
-				width: 20vw;
+				width: 22vw;
+				min-width: 220px;
 				max-width: 430px;
 				+.en{
-					width: 20vw;
+					width: 30vw;
+					min-width: 260px;
 					max-width: 478px;
-					margin-top: 5vh;
+					margin-top: 2.7vw;
 				}
 			}
 		}
 		.txt{
 			display: flex;
 			align-items: end;
-			padding-bottom: 25vh;
-			font-size: 2.4rem;
-			line-height: 1.75;
+			padding-bottom: 8.7vw;
+			font-size: 3rem;
+			line-height: 1.9;
+			font-weight: 700;
 			color: #00ff0b;
+			letter-spacing: 0.01em;
 			text-align: right;
 		}
 	}
@@ -215,8 +250,9 @@
 	/* .home-event
 	================================================ */
 	.home-event{
-		margin-top: 118px;
+		margin-top: 113px;
 		.tit{
+			margin-left: 19px;
 			.ja{
 				display: block;
 				width: 131px;
@@ -268,8 +304,9 @@
 	/* .home-ticket
 	================================================ */
 	.home-ticket{
-		margin-top: 118px;
+		margin-top: 115px;
 		.tit{
+			margin-left: 19px;
 			.ja{
 				display: block;
 				width: 91px;
@@ -277,7 +314,7 @@
 			.en{
 				display: block;
 				width: 280px;
-				margin-top: 9px;
+				margin-top: 4px;
 			}
 		}
 		&__box{
@@ -312,6 +349,7 @@
 		margin-top: 120px;
 		.tit{
 			width: 163px;
+			margin-left: 19px;
 		}
 		.logo{
 			width: 281px;

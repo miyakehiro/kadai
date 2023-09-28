@@ -80,14 +80,15 @@
 /* .ft-cr
 ================================================ */
 .ft-cr{
-	margin-top: 60px;
+	margin-top: 50px;
 	text-align: center;
 	&__link{
 		display: inline-block;
 		position: relative;
-		font-size: 1.3rem;
+		font-size: 1.1rem;
 		text-align: center;
 		color: #e60029;
+		letter-spacing: .04em;
 		text-decoration: none;
 		@include m.trans;
 		&::before{

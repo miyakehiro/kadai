@@ -4,7 +4,7 @@
 
 <div class="l-contents">
     <main role="main">
-        <div class="lead">
+        <div class="lead js-anime-elem">
             <div class="u-inner">
                 <div class="lead-box online">
                     <picture>
@@ -21,7 +21,15 @@
             </div>
         </div>
 
-        <section id="news" class="home-news">
+        <section id="news" class="home-news js-anime-elem">
+            <div class="bg-gear">
+                <div class="bg-gear__rotate">
+                    <picture>
+                          <source srcset="<%- data.index.imgSrc %>/home/ico_bg01.webp" type="image/webp">
+                          <img src="<%- data.index.imgSrc %>/home/ico_bg01.png" alt="<%- data.index.news.subtitle %>">
+                    </picture>
+                </div>
+            </div>
             <div class="home-news__inner u-inner">
                 <h2 class="tit">
                     <picture class="ja">
@@ -55,11 +63,34 @@
             </div>
         </section>
 
-        <div class="mid">
-            <picture class="en">
-                <source srcset="<%- data.index.imgSrc %>/home/bg_one01.webp" type="image/webp">
-                <img src="<%- data.index.imgSrc %>/home/bg_one01.png" alt="<%- data.index.mid.subtitle %>">
-            </picture>
+        <div class="mid js-anime-elem">
+            <ul class="list js-bg-slider">
+                <li  class="list-item">
+                    <picture>
+                        <source srcset="<%- data.index.imgSrc %>/home/bg_one01.webp" type="image/webp">
+                        <img src="<%- data.index.imgSrc %>/home/bg_one01.png" alt="<%- data.index.mid.subtitle %>">
+                    </picture>
+                </li>
+                <li  class="list-item">
+                    <picture>
+                        <source srcset="<%- data.index.imgSrc %>/home/bg_one02.webp" type="image/webp">
+                        <img src="<%- data.index.imgSrc %>/home/bg_one02.png" alt="<%- data.index.mid.subtitle %>">
+                    </picture>
+                </li>
+                <li  class="list-item">
+                    <picture>
+                        <source srcset="<%- data.index.imgSrc %>/home/bg_one03.webp" type="image/webp">
+                        <img src="<%- data.index.imgSrc %>/home/bg_one03.png" alt="<%- data.index.mid.subtitle %>">
+                    </picture>
+                </li>
+                <li  class="list-item">
+                    <picture>
+                        <source srcset="<%- data.index.imgSrc %>/home/bg_one04.webp" type="image/webp">
+                        <img src="<%- data.index.imgSrc %>/home/bg_one04.png" alt="<%- data.index.mid.subtitle %>">
+                    </picture>
+                </li>
+            </ul>
+            
             <div class="mid-box">
                 <h2 class="tit">
                     <picture class="en">
@@ -71,11 +102,11 @@
                           <img src="<%- data.index.imgSrc %>/home/tit_one01.png" alt="<%- data.index.mid.title %>">
                     </picture>
                 </h2>
-                <p class="txt myriad-pro"><%- data.index.mid.text %></p>
+                <p class="txt note-sans"><%- data.index.mid.text %></p>
             </div>
         </div>
 
-        <section id="event" class="home-event">
+        <section id="event" class="home-event js-anime-elem">
             <div class="home-event__inner u-inner">
                 <h2 class="tit">
                     <picture class="ja">
@@ -89,7 +120,7 @@
                 </h2>
                 <div class="home-event__box">
                     <ul class="list">
-                        <li class="list-item">
+                        <li id="online" class="list-item">
                             <a href="" class="list-item__link">
                                 <picture>
                                       <source srcset="<%- data.index.imgSrc %>/home/bnr_event01_off.webp" type="image/webp">
@@ -97,7 +128,7 @@
                                 </picture>
                             </a>
                         </li>
-                        <li class="list-item">
+                        <li id="offline" class="list-item">
                             <a href="" class="list-item__link">
                                 <picture>
                                       <source srcset="<%- data.index.imgSrc %>/home/bnr_event02_off.webp" type="image/webp">
@@ -110,7 +141,7 @@
             </div>
         </section>
 
-        <section id="tickets" class="home-ticket">
+        <section id="tickets" class="home-ticket js-anime-elem">
             <div class="home-ticket__inner u-inner">
                 <h2 class="tit">
                     <picture class="ja">
@@ -133,7 +164,7 @@
             </div>
         </section>
 
-        <div class="production">
+        <div class="production js-anime-elem">
             <div class="u-inner">
                 <h2 class="tit">
                     <picture>

@@ -12,7 +12,7 @@ $(document).ready(function(){
       // Append each item to the slider
       data.forEach(function(item, index) {
         var sliderItem = $('<div class="slider-item">')
-            .append('<a class="list-item__link" href="'+item.link+ '"><picture><source srcset="' + item.img01+ '" type="image/webp"><img src="' +item.img02 + '" alt=""></picture><p class="date m-plus-1p">' + item.date + '</p><p class="txt m-plus-1p">' + item.text + '</p></a>');
+            .append('<a class="list-item__link '+item.new+'" href="'+item.link+ '"><picture><source srcset="' + item.img01+ '" type="image/webp"><img src="' +item.img02 + '" alt=""></picture><p class="date m-plus-1p">' + item.date + '</p><p class="txt m-plus-1p">' + item.text + '</p></a>');
 
         slider.append(sliderItem);
       });
@@ -39,5 +39,5 @@ $(document).ready(function(){
     }
 
     // Example: Update the data every 10 seconds (adjust as needed)
-    setInterval(updateData, 100000);
+    setInterval(updateData, 10000);
   });
