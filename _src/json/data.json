@@ -16,30 +16,41 @@
             "common": {
                 "title":"課題",
                 "imgSrc": "img",
+                "cssSrc": "css",
                 "jsSrc": "js"
             }
         },
-        "news": {
-            "lists" : [
-                {
-                "link": "/",
-                "img": "/img/img-news01.png",
-                "date": "2022.10.27",
-                "text": "お知らせのタイトルが入ります。お知らせのタイトルが入ります。お知らせのタイトルが入ります。"
-                },
-                {
-                "link": "/",
-                "img": "/img/img-news02.png",
-                "date": "2022.10.27",
-                "text": "コンお知らせのタイトルが入ります。お知らせのタイトルが入ります。お知らせのタイトルが入ります。テンツ02"
-                },
-                {
-                "link": "/",
-                "img": "/img/img-news02.png",
-                "date": "2022.10.27",
-                "text": "コンお知らせのタイトルが入ります。お知らせのタイトルが入ります。お知らせのタイトルが入ります。テンツ02"
-                }
-              ]
+        "index":{
+            "imgSrc": "img",
+            "lead": {
+                "online":"ONLINE STARING FROM NOVEMBER",
+                "offline": "OFFLINE 2022.12.23 FRI・12.24 SAT"
+            },
+            "news": {
+                "subtitle":"お知らせ",
+                "title": "NEWS",
+                "img": "MORE"
+            },
+            "mid": {
+                "subtitle":"GAMES, FANS, RIOT, as",
+                "title": "ONE",
+                "text": "Riot Games ONEは、<br>今年1年を通じてRiot Gamesを盛り上げていただいた方々が<br>一堂に会して今年の集大成を披露する<br>2ヶ月間のオンライン・オフライン統合イベントです。"
+            },
+            "event": {
+                "subtitle":"イベント概要",
+                "title": "EVENT",
+                "bnr01":"ONLINE STARING FROM NOVEMBER オンラインイベント概要",
+                "bnr02": "OFFLINE 2022.12.23 FRI・12.24 SAT オフラインイベント概要"
+            },
+            "ticket": {
+                "subtitle":"チケット",
+                "title": "TICKET",
+                "bnr01":"チケット購入 TICKET"
+            },
+            "production": {
+                "title": "制作・運営",
+                "logo": "RAGE"
+            }
         }
     }
 }

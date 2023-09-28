@@ -1,11 +1,157 @@
 <%-
-  include('inc/_header', {header: data.header.common});
+    include('inc/_header', {header: data.header.common});
 %>
 
-<div class="js-lists lists__area">
+<div class="l-contents">
+    <main role="main">
+        <div class="lead">
+            <div class="u-inner">
+                <div class="lead-box online">
+                    <picture>
+                        <source srcset="<%- data.index.imgSrc %>/home/img_leadtxt01.webp" type="image/webp">
+                        <img src="<%- data.index.imgSrc %>/home/img_leadtxt01.png" alt="<%- data.index.lead.online %>">
+                    </picture>
+                </div>
+                <div class="lead-box offline">
+                      <picture>
+                          <source srcset="<%- data.index.imgSrc %>/home/img_leadtxt02.webp" type="image/webp">
+                          <img src="<%- data.index.imgSrc %>/home/img_leadtxt02.png" alt="<%- data.index.lead.offline %>">
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+        <section id="news" class="home-news">
+            <div class="home-news__inner u-inner">
+                <h2 class="tit">
+                    <picture class="ja">
+                          <source srcset="<%- data.index.imgSrc %>/home/sub-tit_news01.webp" type="image/webp">
+                          <img src="<%- data.index.imgSrc %>/home/sub-tit_news01.png" alt="<%- data.index.news.subtitle %>">
+                    </picture>
+                    <picture class="en">
+                          <source srcset="<%- data.index.imgSrc %>/home/tit_news01.webp" type="image/webp">
+                          <img src="<%- data.index.imgSrc %>/home/tit_news01.png" alt="<%- data.index.news.title %>">
+                    </picture>
+                </h2>
+                <div class="home-news__box">
+                    <div class="slider-container">
+                        <ul class="slider-list js-slider">
+                          <!-- スライダーの内容はここに挿入されます -->
+                        </ul>
+                        <div class="arrow-btn">
+                            <button class="prev-btn"></button>
+                            <button class="next-btn"></button>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <a href="#" class="bnt-link">
+                            <picture>
+                                <source srcset="<%- data.index.imgSrc %>/common/btn_more01_off.webp" type="image/webp">
+                                <img src="<%- data.index.imgSrc %>/common/btn_more01_off.png" alt="<%- data.index.news.img %>">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="mid">
+            <picture class="en">
+                <source srcset="<%- data.index.imgSrc %>/home/bg_one01.webp" type="image/webp">
+                <img src="<%- data.index.imgSrc %>/home/bg_one01.png" alt="<%- data.index.mid.subtitle %>">
+            </picture>
+            <div class="mid-box">
+                <h2 class="tit">
+                    <picture class="en">
+                          <source srcset="<%- data.index.imgSrc %>/home/sub-tit_one01.webp" type="image/webp">
+                          <img src="<%- data.index.imgSrc %>/home/sub-tit_one01.png" alt="<%- data.index.mid.subtitle %>">
+                    </picture>
+                    <picture class="en">
+                          <source srcset="<%- data.index.imgSrc %>/home/tit_one01.webp" type="image/webp">
+                          <img src="<%- data.index.imgSrc %>/home/tit_one01.png" alt="<%- data.index.mid.title %>">
+                    </picture>
+                </h2>
+                <p class="txt myriad-pro"><%- data.index.mid.text %></p>
+            </div>
+        </div>
+
+        <section id="event" class="home-event">
+            <div class="home-event__inner u-inner">
+                <h2 class="tit">
+                    <picture class="ja">
+                          <source srcset="<%- data.index.imgSrc %>/home/sub-tit_event01.webp" type="image/webp">
+                          <img src="<%- data.index.imgSrc %>/home/sub-tit_event01.png" alt="<%- data.index.event.subtitle %>">
+                    </picture>
+                    <picture class="en">
+                          <source srcset="<%- data.index.imgSrc %>/home/tit_event01.webp" type="image/webp">
+                          <img src="<%- data.index.imgSrc %>/home/tit_event01.png" alt="<%- data.index.event.title %>">
+                    </picture>
+                </h2>
+                <div class="home-event__box">
+                    <ul class="list">
+                        <li class="list-item">
+                            <a href="" class="list-item__link">
+                                <picture>
+                                      <source srcset="<%- data.index.imgSrc %>/home/bnr_event01_off.webp" type="image/webp">
+                                      <img src="<%- data.index.imgSrc %>/home/bnr_event01_off.png" alt="<%- data.index.event.bnr01 %>">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="" class="list-item__link">
+                                <picture>
+                                      <source srcset="<%- data.index.imgSrc %>/home/bnr_event02_off.webp" type="image/webp">
+                                      <img src="<%- data.index.imgSrc %>/home/bnr_event02_off.png" alt="<%- data.index.event.bnr02 %>">
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="tickets" class="home-ticket">
+            <div class="home-ticket__inner u-inner">
+                <h2 class="tit">
+                    <picture class="ja">
+                          <source srcset="<%- data.index.imgSrc %>/home/sub-tit_ticket01.webp" type="image/webp">
+                          <img src="<%- data.index.imgSrc %>/home/sub-tit_ticket01.png" alt="<%- data.index.ticket.subtitle %>">
+                    </picture>
+                    <picture class="en">
+                          <source srcset="<%- data.index.imgSrc %>/home/tit_ticket01.webp" type="image/webp">
+                          <img src="<%- data.index.imgSrc %>/home/tit_ticket01.png" alt="<%- data.index.ticket.title %>">
+                    </picture>
+                </h2>
+                <div class="home-ticket__box">
+                    <a href="" class="link">
+                        <picture>
+                              <source srcset="<%- data.index.imgSrc %>/home/bnr_ticket01_off.webp" type="image/webp">
+                              <img src="<%- data.index.imgSrc %>/home/bnr_ticket01_off.png" alt="<%- data.index.ticket.bnr01 %>">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="production">
+            <div class="u-inner">
+                <h2 class="tit">
+                    <picture>
+                          <source srcset="<%- data.index.imgSrc %>/home/sub-tit_production01.webp" type="image/webp">
+                          <img src="<%- data.index.imgSrc %>/home/sub-tit_production01.png" alt="<%- data.index.production.title %>">
+                    </picture>
+                </h2>
+                <div class="logo">
+                    <picture>
+                          <source srcset="<%- data.index.imgSrc %>/home/logo_production01.webp" type="image/webp">
+                          <img src="<%- data.index.imgSrc %>/home/logo_production01.png" alt="<%- data.index.production.logo %>">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </main>
 </div>
 
 <%-
-  include('inc/_footer', {footer: data.footer.common});
+    include('inc/_footer', {footer: data.footer.common});
 %>
-

@@ -1,0 +1,37 @@
+[
+    {
+        "link": "/",
+        "img01": "img/home/img_news01.webp",
+        "img02": "img/home/img_news01.png",
+        "date": "2022.10.27",
+        "text": "お知らせのタイトルが入ります。お知らせのタイトルが入ります。お知らせのタイトルが入ります。"
+    },
+    {
+        "link": "/",
+        "img01": "img/home/img_news02.webp",
+        "img02": "img/home/img_news02.png",
+        "date": "2022.10.27",
+        "text": "お知らせのタイトルが入ります。お知らせのタイトルが入ります。お知らせのタイトルが入ります。テンツ02"
+    },
+    {
+        "link": "/",
+        "img01": "img/home/img_news03.webp",
+        "img02": "img/home/img_news03.png",
+        "date": "2022.10.27",
+        "text": "お知らせのタイトルが入ります。お知らせのタイトルが入ります。お知らせのタイトルが入ります。テンツ02"
+    },
+    {
+        "link": "/",
+        "img01": "img/home/img_news_dummy.webp",
+        "img02": "img/home/img_news_dummy.png",
+        "date": "2022.10.27",
+        "text": "お知らせのタイトルが入ります。お知らせのタイトルが入ります。お知らせのタイトルが入ります。テンツ02"
+    },
+    {
+        "link": "/",
+        "img01": "img/home/img_news_dummy.webp",
+        "img02": "img/home/img_news_dummy.png",
+        "date": "2022.10.27",
+        "text": "お知らせのタイトルが入ります。お知らせのタイトルが入ります。お知らせのタイトルが入ります。テンツ02"
+    }
+]

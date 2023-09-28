@@ -22,20 +22,25 @@
 		visibility: visible;
 	}
 	&__link {
+		display: block;
 		text-decoration: none;
-		overflow: hidden;
-		text-indent: 200%;
-		white-space: nowrap;
 		position: relative;
-		&::after{
+		&::before{
 			display: block;
 			content: '';
 			position: absolute;
-			width: 88px;
-			height: 88px;
-			right: 50px;
-			margin-left: -8px;
-			background: url('../img/common/btn_top01.webp') no-repeat center /100%;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: url('../img/common/btn_top01_on.webp') no-repeat center /100%;
+			opacity: 0;
+			@include m.trans;
+		}
+		&:hover{
+			&::before{
+				opacity: 1;
+			}
 		}
 	}
 }

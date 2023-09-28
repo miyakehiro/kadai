@@ -220,46 +220,6 @@ $(window).on('scroll',function(){
 	    }
 	});
 
+	
+	
 })(jQuery);
-
-/* json
-------------------------------------- */
-let requestURL = 'data.json';
-let request = new XMLHttpRequest();
-request.open('GET', requestURL);
-request.responseType = 'json';
-
-request.send();
-
-request.onload = function() {
-	let listJSON  = request.response;
-	listJSON  = JSON.parse(JSON.stringify(listJSON ));
-
-	console.log(listJSON );
-	pageList(listJSON.lists)
-}
-function pageList(els) {
-	let section = document.querySelector('.js-lists');
-	
-	els.forEach(function(el) {
-		let title = el.title;
-		let img = el.img;
-		let link = el.link;
-		let date = el.date;
-		let visibleDay = new Date(date);
-		let visibleDate = visibleDay.getFullYear() + "/" +  (visibleDay.getMonth() + 1) + "/"+ visibleDay.getDate();
-		
-		if(currentDate === visibleDate) {
-			let sampleCode = '<div class="list__content">' +
-			'<a href="' + link + '">' +
-			'<div class="img__box">' +
-			'<img src="' + img + '">' +
-			'</div>' +
-			'<p class="title">' + title + '</p>' +
-			'</a>' +
-			'</div>';
-	
-			section.insertAdjacentHTML('beforeend', sampleCode);
-		}
-	});
-}
