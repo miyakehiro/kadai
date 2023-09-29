@@ -1,0 +1,27 @@
+@use "./01_setting/_mixin.scss" as m;
+@use "./01_setting/_var.scss" as v;
+
+/* link
+-------------------------------------- */
+.u-alpha {
+	display: block;
+	text-decoration: none;
+	@include m.trans;
+	&:hover {
+		opacity: .7;
+	}
+}
+
+/* layout
+-------------------------------------- */
+.u-cf::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.u-inner{
+	box-sizing: border-box;
+	width: 100%;
+	max-width: v.$contents_width;
+	margin: auto;
+}

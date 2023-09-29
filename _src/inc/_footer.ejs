@@ -1,19 +1,28 @@
+        <div class="ft-pagetop js-pagetop">
+            <a class="ft-pagetop__link" href="#top">
+                <picture>
+                    <source srcset="<%- footer.imgSrc %>/common/btn_top01_off.webp" type="image/webp">
+                    <img src="<%- footer.imgSrc %>/common/btn_top01_off.png" alt="<%- footer.title %>">
+                </picture>
+            </a>
+        </div>
+        <!-- ft-pagetop トップに戻るボタン -->
 
-
-        <div class="js-pagetop ft-pagetop"><a class="ft-pagetop_link u-alpha" href="#top"></a></div>
-        <footer class="js-footer l-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
-    
+        <footer class="l-footer js-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
             <div class="ft-content">
                 <div class="ft-content__inner">
                     <div class="ft-content__logo">
-                        <picture>
-                            <source srcset="<%- footer.imgSrc %>/common/img_logo02.webp" type="image/webp">
-                            <img src="<%- footer.imgSrc %>/common/img_logo02.png" alt="<%- footer.title %>">
-                        </picture>
+                        <a href="/" class="ft-content__logo-link u-alpha">
+                            <picture>
+                                <source srcset="<%- footer.imgSrc %>/common/img_logo02.webp" type="image/webp">
+                                <img src="<%- footer.imgSrc %>/common/img_logo02.png" alt="<%- footer.title %>">
+                            </picture>
+                        </a>
                     </div>
+                    <!-- ft-content__logo フッターロゴ -->
                     <ul class="ft-content__sns-list">
                         <li class="ft-content__sns-list__item">	
-                            <a href="about" class="ft-content__sns-list__item-link">
+                            <a href="#" class="ft-content__sns-list__item-link u-alpha">
                                 <picture>
                                     <source srcset="<%- footer.imgSrc %>/common/ico_sns01.webp" type="image/webp">
                                     <img src="<%- footer.imgSrc %>/common/ico_sns01.png" alt="facebook">
@@ -21,7 +30,7 @@
                             </a>	
                         </li>
                         <li class="ft-content__sns-list__item">	
-                            <a href="#profile" class="ft-content__sns-list__item-link">
+                            <a href="#" class="ft-content__sns-list__item-link u-alpha">
                                 <picture>
                                     <source srcset="<%- footer.imgSrc %>/common/ico_sns02.webp" type="image/webp">
                                     <img src="<%- footer.imgSrc %>/common/ico_sns02.png" alt="Twitter">
@@ -29,7 +38,7 @@
                             </a>	
                         </li>
                         <li class="ft-content__sns-list__item">	
-                            <a href="#works" class="ft-content__sns-list__item-link">
+                            <a href="#" class="ft-content__sns-list__item-link u-alpha">
                                 <picture>
                                     <source srcset="<%- footer.imgSrc %>/common/ico_sns03.webp" type="image/webp">
                                     <img src="<%- footer.imgSrc %>/common/ico_sns03.png" alt="LINE">
@@ -37,23 +46,48 @@
                             </a>	
                         </li>
                     </ul>
+                    <!-- ft-content__sns-list SNSアイコンエリア -->
                 </div>
             </div>
-	        <p class="ft-cr"><a href="<?php echo home_url(); ?>/" class="ft-cr_link"><small class="ft-cr_txt">&copy; </small>2022 Riot Games, Inc All Rights Reserved.</a></p>
+	        <p class="ft-cr"><a href="/" class="ft-cr__link master-sans"><small class="ft-cr__txt">&copy; </small>2022 Riot Games, Inc All Rights Reserved.</a></p>
         </footer>
+        <!-- l-footer フッター -->
     </div>
     <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
-    <script src="<%- footer.jsSrc %>/animation.js"></script>
+    <script src="<%- footer.jsSrc %>/animation.min.js"></script>
     <script src="<%- footer.jsSrc %>/common.min.js"></script>
+    <script src="<%- footer.jsSrc %>/news.min.js"></script>
+    <script src="<%- footer.jsSrc %>/videoLightning.min.js"></script>
+    <script>
+        $(function() {
+            $(".js-video").jqueryVideoLightning({
+                id: "83VWrmFNiMk",
+                autoplay: true,
+                bdColor: "#000",
+            });
+        });
+    </script>
     <script src="<%- footer.jsSrc %>/slick.min.js"></script>
-    <script type="text/javascript">
-        $(".slide-items").slick({
-            arrows: true,
-            dots: false, 
-            autoplay: true,
-            speed: 1500,
-            slidesToShow: 3,
+    <script>
+        $(function () {
+        var $slider = $('.js-bg-slider');
+            $slider.slick({
+                arrows: false,
+                dots: false,
+                fade: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                speed: 600,
+                slidesToShow: 1,
+            });
+            $slider.on({
+                mouseenter: function () { isPause = true; },
+                mouseleave: function () { isPause = false; }
+            });
         });
     </script>
 </body>
 </html>
+
+
+

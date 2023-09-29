@@ -1,0 +1,50 @@
+@use "./01_setting/_mixin.scss" as m;
+@use "./01_setting/_var.scss" as v;
+
+/* .l-main-img HOME
+================================================ */
+.l-main-img {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+	&-inner{
+		display: flex;
+		justify-content: center;
+		align-items: end;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+	}
+	&__video{
+		position: absolute;
+		right: 60px;
+		bottom: 60px;
+	}
+	&__video-box{
+		display: block;
+		position: relative;
+		&::before{
+			display: block;
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: url('../img/home/img_video01_on.webp') no-repeat center /100%;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			@include m.trans;
+		}
+		&:hover{
+			&::before{
+				opacity: 1;
+			}
+		}
+	}
+}

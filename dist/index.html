@@ -3,98 +3,303 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <title>課題</title>
+    <title>RIOT GAMES ONE</title>
     <meta name="description" content="課題" />
-    <meta name="keywords" content="課題"> 
+    <meta name="keywords" content="RIOT GAMES ONE"> 
     <meta property="og:locale" content="ja_JP" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="課題" />
+    <meta property="og:title" content="RIOT GAMES ONE" />
     <meta property="og:description" content="課題" />
-    <meta property="og:site_name" content="課題" />
+    <meta property="og:site_name" content="RIOT GAMES ONE" />
     <meta property="og:image" content="img/common/ogp.jpg">
-    <link rel="shortcut icon" href="img/favicon.ico" >
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="img/common/favicon.ico" >
+    <link rel="apple-touch-icon" href="img/common/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=M+PLUS+1p:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body id="home" class="js-anime">
-    <div class="js-media-query u-media-query"></div>
-    <div class="js-nav-overlay nav-overlay"></div>
+    <div class="loading">
+        <picture class="loading__logo">
+            <source srcset="img/home/ico_bg01.webp" type="image/webp">
+            <img src="img/home/ico_bg01.png" alt="">
+        </picture>
+    </div>
     <div class="l-wrapper">
-        <header class="js-header l-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+        <header class="l-header js-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
             <div class="hd-info">
                 <div class="hd-info-inner">
-                    <h1 class="hd-info__logo js-logo">
-                        <a href="/" class="hd-info_logo-link u-alpha">
+                    <h1 class="hd-info__log">
+                        <a href="/" class="hd-info__logo-link u-alpha">
                          <picture>
                             <source srcset="img/common/img_logo01.webp" type="image/webp">
-                            <img src="img/common/img_logo01.png" alt="課題">
+                            <img src="img/common/img_logo01.png" alt="RIOT GAMES ONE">
                         </picture>
                         </a>
                     </h1>
-                    <nav class="js-nav-content l-nav animated-nav" role="navigation" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+                    <nav class="l-nav" role="navigation" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
                         <ul class="nav-list">
                             <li class="nav-list__item" itemprop="name">
                                 <a class="nav-list__link" itemprop="URL" href="#news">NEWS</a>
                             </li>
                             <li class="nav-list__item" itemprop="name">
                                 <a class="nav-list__link" itemprop="URL" href="#event">EVENT</a>
-                                <p class="nav-list_trigger js-toggle-trigger"><span></span></p>
-                                <ul class="nav-sub-list js-toggle-content">
+                                <ul class="nav-sub-list">
                                     <li class="nav-sub-list__item">
-                                        <a class="nav-sub-list__link" href="">オンラインイベント概要</a>
+                                        <a class="nav-sub-list__link myriad-pro" href="#online">オンラインイベント概要</a>
                                     </li>
-                                    <li class="nav-sub-list_item">
-                                        <a class="nav-sub-list__link" href="">オンラインイベント概要</a>
+                                    <li class="nav-sub-list__item">
+                                        <a class="nav-sub-list__link myriad-pro" href="#offline">オフラインイベント概要</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-list__item" itemprop="name">
                                 <a class="nav-list__link" itemprop="URL" href="#tickets">TICKETS</a>
                             </li>
-                            </li>
                         </ul>
                     </nav>
+                    <!-- nav ヘッダーナビ -->
                 </div>
             </div>
         </header>
+        <!-- header ヘッダー -->
+
         <div class="l-main-img">
             <picture>
                 <source srcset="img/home/img_main01.webp" type="image/webp">
-                <img src="img/home/img_main01.png" alt="課題">
+                <img src="img/home/img_main01.png" alt="RIOT GAMES ONE">
             </picture>
 			<div class="l-main-img-inner">
-				<picture class="l-main-img-logo">
-                    <source srcset="img/home/img_logo01.webp" type="image/webp">
-                    <img src="img/home/img_logo01.png" alt="課題">
-                </picture>
-                <div class="video"></div>
+                <div class="l-main-img__video">
+                    <div class="l-main-img__video-box js-video" data-video-id="83VWrmFNiMk">
+                        <picture>
+                            <source srcset="img/home/img_video01_off.webp" type="image/webp">
+                            <img src="img/home/img_video01_off.png" alt="youtube">
+                        </picture>
+                    </div>
+                </div>
 			</div>
 		</div>
+        <!-- l-main-img メインビジュアル -->
 
-<div class="js-lists lists__area">
+<div class="l-contents">
+    <main role="main">
+        <div class="lead js-anime-elem">
+            <div class="u-inner">
+                <div class="lead-box online">
+                    <picture>
+                        <source srcset="img/home/img_leadtxt01.webp" type="image/webp">
+                        <img src="img/home/img_leadtxt01.png" alt="ONLINE STARING FROM NOVEMBER">
+                    </picture>
+                </div>
+                <div class="lead-box offline">
+                      <picture>
+                          <source srcset="img/home/img_leadtxt02.webp" type="image/webp">
+                          <img src="img/home/img_leadtxt02.png" alt="OFFLINE 2022.12.23 FRI・12.24 SAT">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <!-- lead -->
+
+        <section id="news" class="home-news js-anime-elem">
+            <div class="bg-gear">
+                <div class="bg-gear__rotate">
+                    <picture>
+                          <source srcset="img/home/ico_bg01.webp" type="image/webp">
+                          <img src="img/home/ico_bg01.png" alt="お知らせ">
+                    </picture>
+                </div>
+            </div>
+            <div class="home-news__inner u-inner">
+                <h2 class="tit">
+                    <picture class="ja">
+                          <source srcset="img/home/sub-tit_news01.webp" type="image/webp">
+                          <img src="img/home/sub-tit_news01.png" alt="お知らせ">
+                    </picture>
+                    <picture class="en">
+                          <source srcset="img/home/tit_news01.webp" type="image/webp">
+                          <img src="img/home/tit_news01.png" alt="NEWS">
+                    </picture>
+                </h2>
+                <div class="home-news__box">
+                    <div class="slider-container">
+                        <ul class="slider-list js-slider">
+                            <!-- スライダーの内容はここに挿入されます -->
+                        </ul>
+                        <div class="arrow-btn">
+                            <button class="prev-btn"></button>
+                            <button class="next-btn"></button>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <a href="#" class="bnt-link">
+                            <picture>
+                                <source srcset="img/common/btn_more01_off.webp" type="image/webp">
+                                <img src="img/common/btn_more01_off.png" alt="MORE">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- NEWS お知らせエリア -->
+
+        <div class="mid js-anime-elem">
+            <ul class="list js-bg-slider">
+                <li  class="list-item">
+                    <picture>
+                        <source srcset="img/home/bg_one01.webp" type="image/webp">
+                        <img src="img/home/bg_one01.png" alt="GAMES, FANS, RIOT, as">
+                    </picture>
+                </li>
+                <li  class="list-item">
+                    <picture>
+                        <source srcset="img/home/bg_one02.webp" type="image/webp">
+                        <img src="img/home/bg_one02.png" alt="GAMES, FANS, RIOT, as">
+                    </picture>
+                </li>
+                <li  class="list-item">
+                    <picture>
+                        <source srcset="img/home/bg_one03.webp" type="image/webp">
+                        <img src="img/home/bg_one03.png" alt="GAMES, FANS, RIOT, as">
+                    </picture>
+                </li>
+                <li  class="list-item">
+                    <picture>
+                        <source srcset="img/home/bg_one04.webp" type="image/webp">
+                        <img src="img/home/bg_one04.png" alt="GAMES, FANS, RIOT, as">
+                    </picture>
+                </li>
+            </ul>
+            
+            <div class="mid-box">
+                <h2 class="tit">
+                    <picture class="en">
+                          <source srcset="img/home/sub-tit_one01.webp" type="image/webp">
+                          <img src="img/home/sub-tit_one01.png" alt="GAMES, FANS, RIOT, as">
+                    </picture>
+                    <picture class="en">
+                          <source srcset="img/home/tit_one01.webp" type="image/webp">
+                          <img src="img/home/tit_one01.png" alt="ONE">
+                    </picture>
+                </h2>
+                <p class="txt note-sans">Riot Games ONEは、<br>今年1年を通じてRiot Gamesを盛り上げていただいた方々が<br>一堂に会して今年の集大成を披露する<br>2ヶ月間のオンライン・オフライン統合イベントです。</p>
+            </div>
+        </div>
+        <!-- mid -->
+
+        <section id="event" class="home-event js-anime-elem">
+            <div class="home-event__inner u-inner">
+                <h2 class="tit">
+                    <picture class="ja">
+                          <source srcset="img/home/sub-tit_event01.webp" type="image/webp">
+                          <img src="img/home/sub-tit_event01.png" alt="イベント概要">
+                    </picture>
+                    <picture class="en">
+                          <source srcset="img/home/tit_event01.webp" type="image/webp">
+                          <img src="img/home/tit_event01.png" alt="EVENT">
+                    </picture>
+                </h2>
+                <div class="home-event__box">
+                    <ul class="list">
+                        <li id="online" class="list-item">
+                            <a href="" class="list-item__link">
+                                <picture>
+                                      <source srcset="img/home/bnr_event01_off.webp" type="image/webp">
+                                      <img src="img/home/bnr_event01_off.png" alt="ONLINE STARING FROM NOVEMBER オンラインイベント概要">
+                                </picture>
+                            </a>
+                        </li>
+                        <li id="offline" class="list-item">
+                            <a href="" class="list-item__link">
+                                <picture>
+                                      <source srcset="img/home/bnr_event02_off.webp" type="image/webp">
+                                      <img src="img/home/bnr_event02_off.png" alt="OFFLINE 2022.12.23 FRI・12.24 SAT オフラインイベント概要">
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- EVENT イベント概要エリア -->
+
+        <section id="tickets" class="home-ticket js-anime-elem">
+            <div class="home-ticket__inner u-inner">
+                <h2 class="tit">
+                    <picture class="ja">
+                          <source srcset="img/home/sub-tit_ticket01.webp" type="image/webp">
+                          <img src="img/home/sub-tit_ticket01.png" alt="チケット">
+                    </picture>
+                    <picture class="en">
+                          <source srcset="img/home/tit_ticket01.webp" type="image/webp">
+                          <img src="img/home/tit_ticket01.png" alt="TICKET">
+                    </picture>
+                </h2>
+                <div class="home-ticket__box">
+                    <a href="" class="link">
+                        <picture>
+                              <source srcset="img/home/bnr_ticket01_off.webp" type="image/webp">
+                              <img src="img/home/bnr_ticket01_off.png" alt="チケット購入 TICKET">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- TICKET チケットエリア -->
+
+        <div class="production js-anime-elem">
+            <div class="u-inner">
+                <h2 class="tit">
+                    <picture>
+                          <source srcset="img/home/sub-tit_production01.webp" type="image/webp">
+                          <img src="img/home/sub-tit_production01.png" alt="制作・運営">
+                    </picture>
+                </h2>
+                <div class="logo">
+                    <picture>
+                          <source srcset="img/home/logo_production01.webp" type="image/webp">
+                          <img src="img/home/logo_production01.png" alt="RAGE">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <!-- production -->
+    </main>
 </div>
 
+        <div class="ft-pagetop js-pagetop">
+            <a class="ft-pagetop__link" href="#top">
+                <picture>
+                    <source srcset="img/common/btn_top01_off.webp" type="image/webp">
+                    <img src="img/common/btn_top01_off.png" alt="課題">
+                </picture>
+            </a>
+        </div>
+        <!-- ft-pagetop トップに戻るボタン -->
 
-
-        <div class="js-pagetop ft-pagetop"><a class="ft-pagetop_link u-alpha" href="#top"></a></div>
-        <footer class="js-footer l-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
-    
+        <footer class="l-footer js-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
             <div class="ft-content">
                 <div class="ft-content__inner">
                     <div class="ft-content__logo">
-                        <picture>
-                            <source srcset="img/common/img_logo02.webp" type="image/webp">
-                            <img src="img/common/img_logo02.png" alt="課題">
-                        </picture>
+                        <a href="/" class="ft-content__logo-link u-alpha">
+                            <picture>
+                                <source srcset="img/common/img_logo02.webp" type="image/webp">
+                                <img src="img/common/img_logo02.png" alt="課題">
+                            </picture>
+                        </a>
                     </div>
+                    <!-- ft-content__logo フッターロゴ -->
                     <ul class="ft-content__sns-list">
                         <li class="ft-content__sns-list__item">	
-                            <a href="about" class="ft-content__sns-list__item-link">
+                            <a href="#" class="ft-content__sns-list__item-link u-alpha">
                                 <picture>
                                     <source srcset="img/common/ico_sns01.webp" type="image/webp">
                                     <img src="img/common/ico_sns01.png" alt="facebook">
@@ -102,7 +307,7 @@
                             </a>	
                         </li>
                         <li class="ft-content__sns-list__item">	
-                            <a href="#profile" class="ft-content__sns-list__item-link">
+                            <a href="#" class="ft-content__sns-list__item-link u-alpha">
                                 <picture>
                                     <source srcset="img/common/ico_sns02.webp" type="image/webp">
                                     <img src="img/common/ico_sns02.png" alt="Twitter">
@@ -110,7 +315,7 @@
                             </a>	
                         </li>
                         <li class="ft-content__sns-list__item">	
-                            <a href="#works" class="ft-content__sns-list__item-link">
+                            <a href="#" class="ft-content__sns-list__item-link u-alpha">
                                 <picture>
                                     <source srcset="img/common/ico_sns03.webp" type="image/webp">
                                     <img src="img/common/ico_sns03.png" alt="LINE">
@@ -118,24 +323,48 @@
                             </a>	
                         </li>
                     </ul>
+                    <!-- ft-content__sns-list SNSアイコンエリア -->
                 </div>
             </div>
-	        <p class="ft-cr"><a href="<?php echo home_url(); ?>/" class="ft-cr_link"><small class="ft-cr_txt">&copy; </small>2022 Riot Games, Inc All Rights Reserved.</a></p>
+	        <p class="ft-cr"><a href="/" class="ft-cr__link master-sans"><small class="ft-cr__txt">&copy; </small>2022 Riot Games, Inc All Rights Reserved.</a></p>
         </footer>
+        <!-- l-footer フッター -->
     </div>
     <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
-    <script src="js/animation.js"></script>
+    <script src="js/animation.min.js"></script>
     <script src="js/common.min.js"></script>
+    <script src="js/news.min.js"></script>
+    <script src="js/videoLightning.min.js"></script>
+    <script>
+        $(function() {
+            $(".js-video").jqueryVideoLightning({
+                id: "83VWrmFNiMk",
+                autoplay: true,
+                bdColor: "#000",
+            });
+        });
+    </script>
     <script src="js/slick.min.js"></script>
-    <script type="text/javascript">
-        $(".slide-items").slick({
-            arrows: true,
-            dots: false, 
-            autoplay: true,
-            speed: 1500,
-            slidesToShow: 3,
+    <script>
+        $(function () {
+        var $slider = $('.js-bg-slider');
+            $slider.slick({
+                arrows: false,
+                dots: false,
+                fade: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                speed: 600,
+                slidesToShow: 1,
+            });
+            $slider.on({
+                mouseenter: function () { isPause = true; },
+                mouseleave: function () { isPause = false; }
+            });
         });
     </script>
 </body>
 </html>
+
+
 

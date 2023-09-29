@@ -1,0 +1,363 @@
+@use "./01_setting/_mixin.scss" as m;
+@use "./01_setting/_var.scss" as v;
+
+#home{
+	/* .lead
+	================================================ */
+	.lead{
+		.lead-box{
+			display: flex;
+			align-items: center;
+			box-sizing: border-box;
+			width: 1080px;
+			+.lead-box{
+				margin-top: 30px;
+			}
+		}
+	}
+
+	/* .home-news
+	================================================ */
+	.home-news{
+		margin-top: 89px;
+		position: relative;
+		.bg-gear{
+			position: absolute;
+			top: 50%;
+			right: -25vw;
+			width: 1210px;
+			height: 1210px;
+			margin-top: -538px;
+
+		}
+		.tit{
+			.ja{
+				display: block;
+				width: 97px;
+			}
+			.en{
+				display: block;
+				width: 239px;
+				margin-top: 9px;
+			}
+		}
+		&__box{
+			margin-top: 39px;
+			.slider-container {
+				margin: 0 auto;
+				width: 100%;
+				position: relative;
+				.slider-list {
+				  white-space: nowrap;
+				  transition: transform 0.3s ease;
+				  margin-right: -150%;
+				  padding-right: 100%;
+				}
+				.slider-item {
+				  box-sizing: border-box;
+				  padding-top: 16px;
+				  padding-right: 32px;
+				  display: inline-block;
+				  vertical-align: top;
+				  white-space: normal;
+				  width: 100%;
+				  .list-item__link{
+					display: block;
+					position: relative;
+					&.new{
+						&::before{
+							display: block;
+							content: "";
+							position: absolute;
+							top: -16px;
+							left: 0;
+							width: 106px;
+							height: 44px;
+							background: url('../img/common/ico_new01.webp') no-repeat center /100%;
+						}
+					}
+					&::after{
+						display: block;
+						content: "";
+						position: absolute;
+						top: -16px;
+						left: 0;
+						width: 100%;
+						height: calc(100% + 16px);
+						background: #050505;
+						opacity: 0;
+						@include m.trans;
+					}
+					&:hover{
+						&::after{
+							opacity: 0.5;
+						}
+					}
+				  }
+				  .date{
+					margin-top: 32px;
+					margin-left: 18px;
+					font-size: 2rem;
+					font-weight: 700;
+					color: #00ff0b;
+				  }
+				  .txt{
+					margin-top: 7px;
+					margin-left: 19px;
+					font-size: 2.2rem;
+					line-height: 1.5;
+					letter-spacing: .09em;
+					font-weight: 500;
+					color: #fff;
+	
+				  }
+				}
+				.arrow-btn{
+					display: flex;
+					justify-content: space-between;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					width: 92vw;
+					margin-top: -45px;
+					margin-left: -46vw;
+					.prev-btn, .next-btn {
+					  display: block;
+					}
+					button{
+						background-color: transparent;
+						border: none;
+						cursor: pointer;
+						outline: none;
+						padding: 0;
+						appearance: none;
+					}
+					.prev-btn{
+						position: relative;
+						text-indent: -999999em;
+						&::before{
+							display: block;
+							content: "";
+							position: absolute;
+							top: 0;
+							left: 0;
+							background: url('../img/common/ico_arrow03_off.webp') no-repeat center /100%;
+							width: 90px;
+							height: 90px;
+							@include m.trans;
+						}
+						&:hover{
+							&::before{
+								background: url('../img/common/ico_arrow03_on.webp') no-repeat center /100%;
+							}
+						}
+					}
+					.next-btn{
+						position: relative;
+						right: 90px;
+						text-indent: -999999em;
+						&::before{
+							display: block;
+							content: "";
+							position: absolute;
+							top: 0;
+							left: 0;
+							background: url('../img/common/ico_arrow04_off.webp') no-repeat center /100%;
+							width: 90px;
+							height: 90px;
+							@include m.trans;
+						}
+						&:hover{
+							&::before{
+								background: url('../img/common/ico_arrow04_on.webp') no-repeat center /100%;
+							}
+						}
+					}
+				}
+			}
+			.btn{
+				width: 440px;
+				margin: 95px auto 0;
+				.bnt-link{
+					display: block;
+					position: relative;
+					&::before{
+						display: block;
+						content: "";
+						position: absolute;
+						top: 0;
+						left: 0;
+						background: url('../img/common/btn_more01_on.webp') no-repeat center /100%;
+						width: 100%;
+						height: 100%;
+						opacity: 0;
+						@include m.trans;
+					}
+					&:hover{
+						&::before{
+							opacity: 1;
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+	/* .mid
+	================================================ */
+	.mid{
+		margin-top: 117px;
+		position: relative;
+		.mid-box{
+			display: flex;
+			justify-content: space-between;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: calc(100% - 132px);
+			height: 100%;
+			padding: 0 66px;
+		}
+		.tit{
+			padding-top: 8.9vw;
+			.en{
+				display: block;
+				width: 20vw;
+				min-width: 220px;
+				max-width: 430px;
+				+.en{
+					width: 28vw;
+					min-width: 260px;
+					max-width: 478px;
+					margin-top: 2.7vw;
+				}
+			}
+		}
+		.txt{
+			display: flex;
+			align-items: end;
+			padding-bottom: 8.7vw;
+			font-size: 1.7vw;
+			line-height: 1.9;
+			font-weight: 700;
+			color: #00ff0b;
+			letter-spacing: 0.01em;
+			text-align: right;
+		}
+	}
+
+	/* .home-event
+	================================================ */
+	.home-event{
+		margin-top: 113px;
+		.tit{
+			margin-left: 19px;
+			.ja{
+				display: block;
+				width: 131px;
+			}
+			.en{
+				display: block;
+				width: 270px;
+				margin-top: 9px;
+			}
+		}
+		&__box{
+			margin-top: 40px;
+			.list{
+				.list-item{
+					+.list-item{
+						margin-top: 60px;
+						.list-item__link{
+							&::before{
+								background: url('../img/home/bnr_event02_on.webp') no-repeat center /100%;
+							}
+						}
+					}
+					&__link{
+						display: block;
+						position: relative;
+						&::before{
+							display: block;
+							content: "";
+							position: absolute;
+							top: 0;
+							left: 0;
+							background: url('../img/home/bnr_event01_on.webp') no-repeat center /100%;
+							width: 100%;
+							height: 100%;
+							opacity: 0;
+							@include m.trans;
+						}
+						&:hover{
+							&::before{
+								opacity: 1;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/* .home-ticket
+	================================================ */
+	.home-ticket{
+		margin-top: 115px;
+		.tit{
+			margin-left: 19px;
+			.ja{
+				display: block;
+				width: 91px;
+			}
+			.en{
+				display: block;
+				width: 280px;
+				margin-top: 4px;
+			}
+		}
+		&__box{
+			margin-top: 40px;
+			.link{
+				display: block;
+				position: relative;
+				&::before{
+					display: block;
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					background: url('../img/home/bnr_ticket01_on.webp') no-repeat center /100%;
+					width: 100%;
+					height: 100%;
+					opacity: 0;
+					@include m.trans;
+				}
+				&:hover{
+					&::before{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
+	/* .production
+	================================================ */
+	.production{
+		margin-top: 120px;
+		.tit{
+			width: 163px;
+			margin-left: 19px;
+		}
+		.logo{
+			width: 281px;
+			margin: 100px auto 0;
+		}
+	}
+}
+
+	
+
+
