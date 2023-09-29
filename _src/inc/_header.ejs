@@ -31,13 +31,11 @@
             <img src="<%- header.imgSrc %>/home/ico_bg01.png" alt="">
         </picture>
     </div>
-    <div class="js-media-query u-media-query"></div>
-    <div class="js-nav-overlay nav-overlay"></div>
     <div class="l-wrapper">
-        <header class="js-header l-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+        <header class="l-header js-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
             <div class="hd-info">
                 <div class="hd-info-inner">
-                    <h1 class="hd-info__logo js-logo">
+                    <h1 class="hd-info__log">
                         <a href="/" class="hd-info__logo-link u-alpha">
                          <picture>
                             <source srcset="<%- header.imgSrc %>/common/img_logo01.webp" type="image/webp">
@@ -45,7 +43,7 @@
                         </picture>
                         </a>
                     </h1>
-                    <nav class="js-nav-content l-nav animated-nav" role="navigation" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+                    <nav class="l-nav" role="navigation" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
                         <ul class="nav-list">
                             <li class="nav-list__item" itemprop="name">
                                 <a class="nav-list__link" itemprop="URL" href="#news">NEWS</a>
@@ -66,9 +64,12 @@
                             </li>
                         </ul>
                     </nav>
+                    <!-- nav ヘッダーナビ -->
                 </div>
             </div>
         </header>
+        <!-- header ヘッダー -->
+
         <div class="l-main-img">
             <picture>
                 <source srcset="<%- header.imgSrc %>/<%- header.slug %>/img_main01.webp" type="image/webp">
@@ -85,3 +86,4 @@
                 </div>
 			</div>
 		</div>
+        <!-- l-main-img メインビジュアル -->

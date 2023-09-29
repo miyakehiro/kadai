@@ -9,12 +9,6 @@ common.js
 		speed = 300,
 		easing = 'swing';
 
-/* get media query
-------------------------------------- */
-	function funcIsDevice() {
-		return $('.js-media-query').css('font-family').replace(/"/g, '');
-	}
-
 
 /* smoothScroll
 ------------------------------------- */
@@ -26,7 +20,6 @@ common.js
 		return false;
 	});
 
-	// .js-headerがなかった時は「var headerHeight....」と「 - headerHeightを消してください」
 	$(window).on('load',function(){
 		//unchor link in site
 		var urlHash = location.hash;
@@ -40,6 +33,7 @@ common.js
 	        $('body,html').animate({ scrollTop:position }, speed, easing);
 	    }
 	});
+
     //other link
     $('a[href^="#"]:not([href="#top"]):not(".js-no-scroll")').on('click',function(){
         var href= $(this).attr('href'),
@@ -91,6 +85,4 @@ $(window).on('scroll',function(){
 			$pagetop.removeAttr('style');
 		}
 	});
-
-
 })(jQuery);

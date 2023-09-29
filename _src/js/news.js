@@ -1,15 +1,15 @@
 $(document).ready(function(){
-    // Load JSON data and initialize the slider
+    // JSON データを読み込んでスライダーを初期化
     $.getJSON('../json/news.json', function(data) {
       displayData(data);
     });
 
-    // Function to display data and initialize the slider
+    // JSON データを読み込んでスライダーを初期化
     function displayData(data) {
       var slider = $('.js-slider');
       slider.empty();
 
-      // Append each item to the slider
+      // 各アイテムをスライダーに追加
       data.forEach(function(item, index) {
         var sliderItem = $('<div class="slider-item">')
             .append('<a class="list-item__link '+item.new+'" href="'+item.link+ '"><picture><source srcset="' + item.img01+ '" type="image/webp"><img src="' +item.img02 + '" alt=""></picture><p class="date m-plus-1p">' + item.date + '</p><p class="txt m-plus-1p">' + item.text + '</p></a>');
@@ -17,7 +17,7 @@ $(document).ready(function(){
         slider.append(sliderItem);
       });
 
-      // Initialize the Slick slider
+      // Slick スライダーを初期化
       slider.slick({
         infinite: true,
         autoplay: false,
@@ -28,16 +28,16 @@ $(document).ready(function(){
       });
     }
 
-    // Update data and refresh the slider when needed
+    // データを更新してスライダーをリフレッシュする関数
     function updateData() {
       $.getJSON('/json/news.json', function(data) {
-        // Clear the existing slider
+        // 既存のスライダーをクリア
         $('.js-slider').slick('unslick').empty();
-        // Display the updated data
+        // 更新されたデータを表示
         displayData(data);
       });
     }
 
-    // Example: Update the data every 10 seconds (adjust as needed)
+    // 10秒ごとにデータを更新
     setInterval(updateData, 10000);
   });

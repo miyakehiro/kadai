@@ -1,20 +1,3 @@
 @mixin trans($prop: all, $time: .3s, $easing: ease) {
 	transition: $prop $time $easing;
 }
-
-$breakpoints: (
-	'sp': 'all and (max-width: 599px)',
-	'tb': 'all and (min-width: 600px)',
-	'pc': 'all and (min-width: 1200px)',
-) !default;
-
-@mixin mq($breakpoint: pc) {
-	@media #{map-get($breakpoints, $breakpoint)} {
-		@content;
-	}
-}
-@mixin transform($value) {
-	-webkit-transform: $value;
-	-ms-transform: $value;
-	transform: $value;
-}

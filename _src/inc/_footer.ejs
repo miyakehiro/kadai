@@ -1,4 +1,4 @@
-        <div class="js-pagetop ft-pagetop">
+        <div class="ft-pagetop js-pagetop">
             <a class="ft-pagetop__link" href="#top">
                 <picture>
                     <source srcset="<%- footer.imgSrc %>/common/btn_top01_off.webp" type="image/webp">
@@ -6,8 +6,9 @@
                 </picture>
             </a>
         </div>
-        <footer class="js-footer l-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
-    
+        <!-- ft-pagetop トップに戻るボタン -->
+
+        <footer class="l-footer js-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
             <div class="ft-content">
                 <div class="ft-content__inner">
                     <div class="ft-content__logo">
@@ -18,6 +19,7 @@
                             </picture>
                         </a>
                     </div>
+                    <!-- ft-content__logo フッターロゴ -->
                     <ul class="ft-content__sns-list">
                         <li class="ft-content__sns-list__item">	
                             <a href="#" class="ft-content__sns-list__item-link u-alpha">
@@ -44,13 +46,15 @@
                             </a>	
                         </li>
                     </ul>
+                    <!-- ft-content__sns-list SNSアイコンエリア -->
                 </div>
             </div>
 	        <p class="ft-cr"><a href="/" class="ft-cr__link master-sans"><small class="ft-cr__txt">&copy; </small>2022 Riot Games, Inc All Rights Reserved.</a></p>
         </footer>
+        <!-- l-footer フッター -->
     </div>
     <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
-    <script src="<%- footer.jsSrc %>/animation.js"></script>
+    <script src="<%- footer.jsSrc %>/animation.min.js"></script>
     <script src="<%- footer.jsSrc %>/common.min.js"></script>
     <script src="<%- footer.jsSrc %>/news.min.js"></script>
     <script src="<%- footer.jsSrc %>/videoLightning.min.js"></script>
@@ -67,7 +71,6 @@
     <script>
         $(function () {
         var $slider = $('.js-bg-slider');
-        
             $slider.slick({
                 arrows: false,
                 dots: false,
